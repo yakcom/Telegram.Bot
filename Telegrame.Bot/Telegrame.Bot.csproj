@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <Title>Telegram.Bot</Title>
+    <Authors>Ilya Miller</Authors>
+    <Company>yakcom</Company>
+    <Description>Library shell TgNet for easy creation of group chat bots Telegram</Description>
+    <Copyright>© Ilya Miller, 2023</Copyright>
+    <PackageProjectUrl>https://github.com/yakcom/Telegram.Bot</PackageProjectUrl>
+    <PackageIcon>Telegram.png</PackageIcon>
+    <RepositoryUrl>https://github.com/yakcom/Telegram.Bot</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Telegram;Bot;TgNet</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Product>Telegram.Bot</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\Telegram.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Telegram.Bot" Version="18.0.0" />
+  </ItemGroup>
+
+</Project>

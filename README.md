@@ -56,7 +56,7 @@ namespace Example
 > Symbol [ / ] separates the text of the button and its options
 ## Example regular keyboard
 ```c#
-TgBot.Send(id, "Example Text", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3");
+TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3");
 ```
 <img src="https://github.com/yakcom/Vkontakte.Bot/blob/master/.github/Buttons.png"/><br><br><br>
 

@@ -11,12 +11,14 @@ using Telegram.Bot;
 # Quick Start
 ```c#
 using Telegram.Bot;
+
 void Main()
 {
     TgBot = new TelegramBot();
     TgBot.Authorization("YOUR_TG_GROUP_API_TOKEN");
     TgBot.Start(Handle);
 }
+
 void Handle(long id, string text)
 {
     TgBot.Send(id, "Hello World");

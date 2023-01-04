@@ -80,12 +80,16 @@ TgBot.Send(id, "Test", "Share Contact/CONTACT;Share Location/LOCATION;Create Pol
 # Additional functions arguments
 ### Send function has 2 additional arguments
 > Inline - keyboard embedded in message
+
 > OneTime - keyboard hides on next message
+
+> Large - big keyboard buttons
+
 ## Example inline keyboard
 ```c#
-VkBot.Send(id, "Test inline keyboard", "Primary/M,Default/D;Positive/P,Negative/N",true);
+TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3",true);
 ```
-<img src="https://github.com/yakcom/Vkontakte.Bot/blob/master/.github/ButtonsInline.png"/><br><br><br>
+<img src="https://github.com/yakcom/Telegram.Bot/blob/master/.github/ButtonsInline.png"/><br><br><br>
 
 # Changing keyboard split characters
 ### Function ***SetKeyboardSplitters()*** allows you to specify your own characters as separators

@@ -2,7 +2,7 @@
 <p align="center"><img  width="200" src="https://github.com/yakcom/Telegram.Bot/blob/master/.github/Tg.png"/></p>
 <h1 align="center">Telegram.Bot</h1></a>
 <h3 align="center">Library shell <a href="https://github.com/TelegramBots/Telegram.Bot" target="_blank">TgNet</a> for easy creation of group chat bots Telegram</h3><br>
-<a href="https://www.nuget.org/packages/Telegrame.Bot"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=100000&duration=3000&color=4392E7&center=true&vCenter=true&width=1000&lines=Download+NuGet+Release" alt="Typing SVG" /></a>
+<a href="https://www.nuget.org/packages/Telegrame.Bot"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=100000&duration=3000&color=2EB3EC&center=true&vCenter=true&width=1000&lines=Download+NuGet+Release" alt="Typing SVG" /></a>
 
 # Using
 ```c#

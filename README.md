@@ -6,42 +6,43 @@
 
 # Using
 ```c#
-using Vkontakte.Bot;
+using Telegram.Bot;
 ```
 # Quick Start
 ```c#
-VkontakteBot VkBot;
+using Telegram.Bot;
 void Main()
 {
-    VkBot = new VkontakteBot();
-    VkBot.Authorization("YOUR_VK_GROUP_API_TOKEN");
-    VkBot.Start(Handle);
+    TgBot = new TelegramBot();
+    TgBot.Authorization("YOUR_TG_GROUP_API_TOKEN");
+    TgBot.Start(Handle);
 }
 void Handle(long id, string text)
 {
-    VkBot.Send(id, "Hello World");
+    TgBot.Send(id, "Hello World");
 }
 ```
 # Console Example
 ```C#
-using Vkontakte.Bot;
+using Telegram.Bot;
 namespace Example
 {
     internal class Simple
     {
-        static VkontakteBot VkBot;
+        static TelegramBot TgBot;
         static void Main(string[] args)
         {
-            VkBot = new VkontakteBot();
-            VkBot.Authorization("YOUR_VK_GROUP_API_TOKEN");
-            VkBot.Start(Handle);
-            Console.ReadLine();
+            TgBot = new TelegramBot();
+            TgBot.Authorization("YOUR_TG_GROUP_API_TOKEN");
+            TgBot.Start(Handle);
+            Console.Read();
         }
-        static void Handle(long id, string text)
+
+        static void Handle(long id,string text)
         {
-            VkBot.Send(id, $"Hello Id: {id}\nYou Say: {text}");
-            VkBot.Send(id, "Test Inline Keyboard", "PositiveButton/P,NegativeButton/N;DefaultButton/D,PrimaryButton/M", true);
-            VkBot.Send(id, "Test Outline Keyboard", "Yes/P,No/N;/LOCATION");
+            TgBot.Send(id, $"Hello Id: {id}\nYou Say: {text}");
+            TgBot.Send(id, "Test Inline Keyboard", "Button11;Button21,Button22;Button31,Button32,Button33", true);
+            TgBot.Send(id, "Test Outline Keyboard", "Contact/CONTACT;Location/LOCATION;Poll/POLL");
         }
     }
 }
@@ -55,7 +56,7 @@ namespace Example
 > Symbol [ / ] separates the text of the button and its options
 ## Example regular keyboard
 ```c#
-VkBot.Send(id, "Example Text", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3");
+TgBot.Send(id, "Example Text", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3");
 ```
 <img src="https://github.com/yakcom/Vkontakte.Bot/blob/master/.github/Buttons.png"/><br><br><br>
 

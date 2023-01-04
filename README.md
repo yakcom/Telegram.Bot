@@ -27,6 +27,7 @@ void Handle(long id, string text)
 # Console Example
 ```C#
 using Telegram.Bot;
+
 namespace Example
 {
     internal class Simple

@@ -61,23 +61,21 @@ namespace Example
 ```c#
 TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Line3,Button2Line3,Button3Line3");
 ```
-<img src="https://github.com/yakcom/Telegram.Bot/.github/Buttons.png"/><br><br><br>
+<img src="https://github.com/yakcom/Telegram.Bot/blob/master/Buttons.png"/><br><br><br>
 
 # Keyboard button options
 
-| Expression |  Button  |
-| ---------- | -------- |
-|     /D     | Default  |
-|     /M     | Primary  |
-|     /P     | Positive |
-|     /N     | Negative |
-|  /LOCATION | Location |
+| Expression |     Button     |
+| ---------- | -------------- |
+|  /CONTACT  | Share Contact  |
+|  /LOCATION | Share Location |
+|  /POLL     | Create Poll    |
 
 ## Example keyboard with button options
 ```c#
-VkBot.Send(id, "Test", "Primary/M;Default/D;Positive/P;Negative/N;/LOCATION");
+TgBot.Send(id, "Test", "Share Contact/CONTACT;Share Location/LOCATION;Create Poll/POLL");
 ```
-<img src="https://github.com/yakcom/Vkontakte.Bot/blob/master/.github/Buttons2.png"/><br><br><br>
+<img src="https://github.com/yakcom/Telegram.Bot/blob/master/.github/Buttons2.png"/><br><br><br>
 
 # Additional functions arguments
 ### Send function has 2 additional arguments

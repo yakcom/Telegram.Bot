@@ -95,7 +95,7 @@ TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Li
 ### Function ***SetKeyboardSplitters()*** allows you to specify your own characters as separators
 ## Example
 ```c#
-VkBot.SetKeyboardSplitters(':','.','|');
-VkBot.Send(id, "Test inline keyboard", "Primary|M.Default|D:Positive|P.Negative|N");
+TgBot.SetKeyboardSplitters(':', '.', '|');
+TgBot.Send(id, "Test keyboard", "Button1|CONTACT.Button2|LOCATION:Button3|POLL");
 ```
-<img src="https://github.com/yakcom/Vkontakte.Bot/blob/master/.github/Buttons3.png"/>
+<img src="https://github.com/yakcom/Telegram.Bot/blob/master/.github/Buttons3.png"/>

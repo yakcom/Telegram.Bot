@@ -16,10 +16,12 @@
     <PackageTags>Telegram;Bot;TgNet</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Product>Telegram.Bot</Product>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\Desktop\Telegram.png">
+    <None Include="..\Telegram.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

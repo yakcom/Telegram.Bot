@@ -17,7 +17,6 @@ namespace Telegram.Bot
         public bool Enable { get; private set; }
 
         //------------------------------------
-        private bool Buzy;
         private bool OneTimeKeyboard;
         private TelegramBotClient TgApi;
         private Action<long, string> Handler;
@@ -74,7 +73,6 @@ namespace Telegram.Bot
         /// <param name="Large">Large keyboard display view</param>
         public void Send(long id, string text, string Keyboard = null, bool Inline = false, bool OneTime = false, bool Large = false)
         {
-            while (Buzy);Buzy = true;
             IReplyMarkup reply = OneTimeKeyboard ? new ReplyKeyboardRemove() : null;OneTimeKeyboard = false;
             if (Keyboard != null)
             {

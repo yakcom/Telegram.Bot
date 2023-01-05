@@ -125,7 +125,7 @@ namespace Telegram.Bot
                 }
                 reply = Inline ? InlineKeyboardMarkup : KeyboardMarkup;
             }
-            TgApi.SendTextMessageAsync(chatId: id, text: text,replyMarkup: reply).Wait();
+            TgApi.SendTextMessageAsync(chatId: id, text: text,replyMarkup: reply);
             Buzy = false;
         }
 

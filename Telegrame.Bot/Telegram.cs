@@ -146,7 +146,7 @@ namespace Telegram.Bot
             {
                 if (data.Message != null)
                 {
-                    Handler(data.Message.From.Id, data.Message.Text);
+                    Handler(data.Message.From.Id, (data.Message.Text!=null)?data.Message.Text:"");
                 }
                 if (data.CallbackQuery != null)
                 {

@@ -58,7 +58,7 @@ namespace Example
 > 
 > Symbol [ , ] separates buttons on a line
 > 
-> Symbol [ / ] separates the text of the button and its options
+> Symbol [ | ] separates the text of the button and its options
 > 
 ## Example regular keyboard
 ```c#

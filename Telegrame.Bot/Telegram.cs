@@ -103,13 +103,20 @@ namespace Telegram.Bot
                             switch (Button.Split(ks.c)[1])
                             {
                                 case "CONTACT":
+                                    if (Inline) throw new Exception("Contact button not for inline keyboard!");
                                     KeyboardBuilder[i][j] = KeyboardButton.WithRequestContact(ButtonText);
                                     break;
                                 case "LOCATION":
+                                    if (Inline) throw new Exception("Location button not for inline keyboard!");
                                     KeyboardBuilder[i][j] = KeyboardButton.WithRequestLocation(ButtonText);
                                     break;
                                 case "POLL":
+                                    if (Inline) throw new Exception("Poll button not for inline keyboard!");
                                     KeyboardBuilder[i][j] = KeyboardButton.WithRequestPoll(ButtonText);
+                                    break;
+                                case "URL":
+                                    if (!Inline) throw new Exception("Url button only for inline keyboard!");
+                                    InlineKeyboardBuilder[i][j] = InlineKeyboardButton.WithUrl(ButtonText, Button.Split(ks.c)[2]);
                                     break;
                                 default:
                                     KeyboardBuilder[i][j] = new KeyboardButton(ButtonText);
@@ -136,7 +143,7 @@ namespace Telegram.Bot
         /// <param name="b">Button columns splitter</param>
         /// <param name="c">Button parameter splitter</param>
         public void SetKeyboardSplitters(char a, char b, char c) { ks = (a, b, c); }
-        private (char a, char b, char c) ks = (';', ',', '/');
+        private (char a, char b, char c) ks = (';', ',', '|');
 
         
         private Task Errors(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken) => Task.CompletedTask; 

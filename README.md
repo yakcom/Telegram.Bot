@@ -70,10 +70,10 @@ TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Li
 
 | Expression |     Button     |
 | ---------- | -------------- |
-|  |CONTACT  | Share Contact  |
-|  |LOCATION | Share Location |
-|  |POLL     | Create Poll    |
-|  |URL      | Create Url     |
+|  CONTACT   | Share Contact  |
+|  LOCATION  | Share Location |
+|  POLL      | Create Poll    |
+|  URL       | Create Url     |
 
 ## Example keyboard with button options
 ```c#

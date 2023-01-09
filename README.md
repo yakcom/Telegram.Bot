@@ -45,7 +45,7 @@ namespace Example
         {
             TgBot.Send(id, $"Hello Id: {id}\nYou Say: {text}");
             TgBot.Send(id, "Test Inline Keyboard", "Button11;Button21,Button22;Button31,Button32,Button33", true);
-            TgBot.Send(id, "Test Outline Keyboard", "Contact/CONTACT;Location/LOCATION;Poll/POLL");
+            TgBot.Send(id, "Test Outline Keyboard", "Contact|CONTACT;Location|LOCATION;Poll|POLL");
         }
     }
 }
@@ -70,13 +70,14 @@ TgBot.Send(id, "Example Test", "Button1Line1;Button1Line2,Button2Line2;Button1Li
 
 | Expression |     Button     |
 | ---------- | -------------- |
-|  /CONTACT  | Share Contact  |
-|  /LOCATION | Share Location |
-|  /POLL     | Create Poll    |
+|  |CONTACT  | Share Contact  |
+|  |LOCATION | Share Location |
+|  |POLL     | Create Poll    |
+|  |URL      | Create Url     |
 
 ## Example keyboard with button options
 ```c#
-TgBot.Send(id, "Test", "Share Contact/CONTACT;Share Location/LOCATION;Create Poll/POLL");
+TgBot.Send(id, "Test", "Share Contact|CONTACT;Share Location|LOCATION;Create Poll|POLL");
 ```
 <img src="https://github.com/yakcom/Telegram.Bot/blob/master/.github/Buttons2.png"/><br><br><br>
 
